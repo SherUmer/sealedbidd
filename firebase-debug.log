@@ -1,0 +1,175 @@
+[debug] [2022-12-10T18:32:25.660Z] ----------------------------------------------------------------------
+[debug] [2022-12-10T18:32:25.681Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2022-12-10T18:32:25.682Z] CLI Version:   11.17.0
+[debug] [2022-12-10T18:32:25.682Z] Platform:      darwin
+[debug] [2022-12-10T18:32:25.682Z] Node Version:  v19.0.0
+[debug] [2022-12-10T18:32:25.683Z] Time:          Sat Dec 10 2022 23:32:25 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-12-10T18:32:25.683Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-10T18:32:25.688Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-10T18:32:25.861Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-10T18:32:25.861Z] > authorizing via signed-in user (hbaiga@gmail.com)
+[debug] [2022-12-10T18:32:25.861Z] [iam] checking project sealedbidd-682e1 for permissions ["firebase.projects.get"]
+[debug] [2022-12-10T18:32:25.863Z] > refreshing access token with scopes: []
+[debug] [2022-12-10T18:32:25.864Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-10T18:32:25.864Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-10T18:32:26.453Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-10T18:32:26.454Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-10T18:32:26.550Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions [none]
+[debug] [2022-12-10T18:32:26.551Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions x-goog-quota-user=projects/sealedbidd-682e1
+[debug] [2022-12-10T18:32:26.551Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-10T18:32:26.557Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-10T18:32:26.557Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-12-10T18:32:28.337Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions 200
+[debug] [2022-12-10T18:32:28.337Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-10T18:32:28.338Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 [none]
+[debug] [2022-12-10T18:32:29.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 200
+[debug] [2022-12-10T18:32:29.139Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 {"projectId":"sealedbidd-682e1","projectNumber":"493680605251","displayName":"sealedbidd","name":"projects/sealedbidd-682e1","resources":{"hostingSite":"sealedbidd-682e1","realtimeDatabaseInstance":"sealedbidd-682e1-default-rtdb","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_173eadb4-8040-4e86-89f1-ea8225c1803a"}
+[info] 
+[info] === Serving from '/Users/hassan/Documents/sealedbidd.com'...
+[info] 
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "19". Using node@19 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"19\". Using node@19 from host."}}
+[debug] [2022-12-10T18:32:29.170Z] defaultcredentials: writing to file /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json
+[debug] [2022-12-10T18:32:29.172Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites 
+[debug] [2022-12-10T18:32:29.178Z] Setting GAC to /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-10T18:32:29.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig [none]
+[debug] [2022-12-10T18:32:29.542Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig 200
+[debug] [2022-12-10T18:32:29.542Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig {"projectId":"sealedbidd-682e1","databaseURL":"https://sealedbidd-682e1-default-rtdb.firebaseio.com","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"}
+[debug] [2022-12-10T18:32:31.096Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites 200
+[debug] [2022-12-10T18:32:31.096Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites {"sites":[{"name":"projects/sealedbidd-682e1/sites/sealedbidd-682e1","defaultUrl":"https://sealedbidd-682e1.web.app","appId":"1:493680605251:web:12905ae96096cbbba8fcf6","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-10T18:32:31.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config [none]
+[debug] [2022-12-10T18:32:32.073Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config 200
+[debug] [2022-12-10T18:32:32.074Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config {"projectId":"sealedbidd-682e1","appId":"1:493680605251:web:12905ae96096cbbba8fcf6","databaseURL":"https://sealedbidd-682e1-default-rtdb.firebaseio.com","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central","apiKey":"AIzaSyAQuy1fr9IskQZqBgQ0DW-4Z0c6G2s3v1Q","authDomain":"sealedbidd-682e1.firebaseapp.com","messagingSenderId":"493680605251","measurementId":"G-T0KSEHBE1X"}
+[debug] [2022-12-10T18:32:32.093Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 [none]
+[debug] [2022-12-10T18:32:32.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 200
+[debug] [2022-12-10T18:32:32.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 {"projectId":"sealedbidd-682e1","projectNumber":"493680605251","displayName":"sealedbidd","name":"projects/sealedbidd-682e1","resources":{"hostingSite":"sealedbidd-682e1","realtimeDatabaseInstance":"sealedbidd-682e1-default-rtdb","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_173eadb4-8040-4e86-89f1-ea8225c1803a"}
+[info] i  functions: Watching "/Users/hassan/Documents/sealedbidd.com/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hassan/Documents/sealedbidd.com/functions\" for Cloud Functions..."}}
+[info] i  hosting[sealedbidd-682e1]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[sealedbidd-682e1]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-12-10T18:32:32.682Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-10T18:32:36.260Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-10T18:32:36.261Z] Building nodejs source
+[debug] [2022-12-10T18:32:36.261Z] Analyzing nodejs backend spec
+[debug] [2022-12-10T18:32:36.283Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-10T18:32:37.574Z] Serving at port 9005
+
+[debug] [2022-12-10T18:32:37.862Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-10T18:32:37.898Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  hosting: ::1 - - [10/Dec/2022:19:06:22 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [10/Dec/2022:19:06:22 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [10/Dec/2022:19:06:22 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [10/Dec/2022:19:06:22 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [10/Dec/2022:19:06:24 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [10/Dec/2022:19:06:24 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-15T07:42:02.521Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T07:42:02.525Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2022-12-15T07:42:02.526Z] CLI Version:   11.17.0
+[debug] [2022-12-15T07:42:02.527Z] Platform:      darwin
+[debug] [2022-12-15T07:42:02.527Z] Node Version:  v19.0.0
+[debug] [2022-12-15T07:42:02.527Z] Time:          Thu Dec 15 2022 12:42:02 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-12-15T07:42:02.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T07:42:02.532Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-15T07:42:02.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T07:42:02.747Z] > authorizing via signed-in user (hbaiga@gmail.com)
+[debug] [2022-12-15T07:42:02.748Z] [iam] checking project sealedbidd-682e1 for permissions ["firebase.projects.get"]
+[debug] [2022-12-15T07:42:02.750Z] > refreshing access token with scopes: []
+[debug] [2022-12-15T07:42:02.751Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-15T07:42:02.751Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-12-15T07:42:32.799Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-12-15T07:42:34.469Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-15T07:42:34.469Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-15T07:42:34.991Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions [none]
+[debug] [2022-12-15T07:42:34.991Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions x-goog-quota-user=projects/sealedbidd-682e1
+[debug] [2022-12-15T07:42:34.992Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-15T07:42:38.015Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions 200
+[debug] [2022-12-15T07:42:38.015Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sealedbidd-682e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-15T07:42:38.016Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 [none]
+[debug] [2022-12-15T07:42:39.029Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 200
+[debug] [2022-12-15T07:42:39.029Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 {"projectId":"sealedbidd-682e1","projectNumber":"493680605251","displayName":"sealedbidd","name":"projects/sealedbidd-682e1","resources":{"hostingSite":"sealedbidd-682e1","realtimeDatabaseInstance":"sealedbidd-682e1-default-rtdb","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_173eadb4-8040-4e86-89f1-ea8225c1803a"}
+[info] 
+[info] === Serving from '/Users/hassan/Documents/sealedbidd.com'...
+[info] 
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "19". Using node@19 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"19\". Using node@19 from host."}}
+[debug] [2022-12-15T07:42:39.058Z] defaultcredentials: writing to file /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json
+[debug] [2022-12-15T07:42:39.059Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites 
+[debug] [2022-12-15T07:42:39.065Z] Setting GAC to /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/hassan/.config/firebase/hbaiga_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-15T07:42:39.067Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig [none]
+[debug] [2022-12-15T07:42:39.519Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig 200
+[debug] [2022-12-15T07:42:39.520Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/adminSdkConfig {"projectId":"sealedbidd-682e1","databaseURL":"https://sealedbidd-682e1-default-rtdb.firebaseio.com","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"}
+[debug] [2022-12-15T07:42:41.664Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites 200
+[debug] [2022-12-15T07:42:41.665Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sealedbidd-682e1/sites {"sites":[{"name":"projects/sealedbidd-682e1/sites/sealedbidd-682e1","defaultUrl":"https://sealedbidd-682e1.web.app","appId":"1:493680605251:web:12905ae96096cbbba8fcf6","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-15T07:42:41.665Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config [none]
+[debug] [2022-12-15T07:42:42.752Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config 200
+[debug] [2022-12-15T07:42:42.752Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1/webApps/1:493680605251:web:12905ae96096cbbba8fcf6/config {"projectId":"sealedbidd-682e1","appId":"1:493680605251:web:12905ae96096cbbba8fcf6","databaseURL":"https://sealedbidd-682e1-default-rtdb.firebaseio.com","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central","apiKey":"AIzaSyAQuy1fr9IskQZqBgQ0DW-4Z0c6G2s3v1Q","authDomain":"sealedbidd-682e1.firebaseapp.com","messagingSenderId":"493680605251","measurementId":"G-T0KSEHBE1X"}
+[debug] [2022-12-15T07:42:43.025Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 [none]
+[debug] [2022-12-15T07:42:43.484Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 200
+[debug] [2022-12-15T07:42:43.485Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sealedbidd-682e1 {"projectId":"sealedbidd-682e1","projectNumber":"493680605251","displayName":"sealedbidd","name":"projects/sealedbidd-682e1","resources":{"hostingSite":"sealedbidd-682e1","realtimeDatabaseInstance":"sealedbidd-682e1-default-rtdb","storageBucket":"sealedbidd-682e1.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_173eadb4-8040-4e86-89f1-ea8225c1803a"}
+[info] i  functions: Watching "/Users/hassan/Documents/sealedbidd.com/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/hassan/Documents/sealedbidd.com/functions\" for Cloud Functions..."}}
+[info] i  hosting[sealedbidd-682e1]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[sealedbidd-682e1]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-12-15T07:42:43.946Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-15T07:42:51.592Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-15T07:42:51.593Z] Building nodejs source
+[debug] [2022-12-15T07:42:51.593Z] Analyzing nodejs backend spec
+[debug] [2022-12-15T07:42:51.600Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-15T07:42:54.081Z] Serving at port 9005
+
+[debug] [2022-12-15T07:42:55.139Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-15T07:42:55.163Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
