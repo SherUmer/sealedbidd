@@ -120,3 +120,23 @@ and open the template in the editor.
 .card{
     box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
 }
+.btn.btn-register {
+    background: #f6f7f9;
+    border-color: #f6f7f9;
+    color: #6c757d;
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+header .user-profile {
+    margin-left: 15px
+}
+
+header .user-profile .user-image {
+    height: 48px;
+    width: 48px
+}
+
+.sidebar+.main-content .iq-navbar-header {
+    color: #fff
+}

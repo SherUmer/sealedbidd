@@ -1,0 +1,3 @@
+<template>
+    Register Component
+</template>
